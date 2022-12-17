@@ -23,7 +23,7 @@ public class Main {
         //Страховка для автомобилей 1, 3, 4, 5:
 
         Car.Insurance insuranceCar1 = car1.new Insurance(car1, 12, 8, 2021, 1000, 123456789);
-        Car.Insurance insuranceCar3 = car3.new Insurance(car3, 17, 2, 2023, 1000, 12345678);
+        Car.Insurance insuranceCar3 = car3.new Insurance(car3, 18, 2, 2023, 1000, 12345678);
         Car.Insurance insuranceCar4 = car4.new Insurance(car4, 23, 3, 2020, 1000, 123456789);
         Car.Insurance insuranceCar5 = car5.new Insurance(car5, 7, 8, 2025, 1000, 1234567891);
 
