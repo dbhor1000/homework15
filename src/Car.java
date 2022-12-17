@@ -23,7 +23,7 @@ public class Car {
 
 
     public Car(String model, String subModel, double engineVol, String color, int year, String country, String transmissionType, String bodyType, String numberPlate, int numberOfSeats,
-    boolean winterTires) { ///Конструктор класса Car c проверкой полей на заполнение
+               boolean winterTires) { ///Конструктор класса Car c проверкой полей на заполнение
 
         //Поля, добавленные для выполнения ДЗ от 15 декабря ->
 
@@ -207,25 +207,25 @@ public class Car {
 
         System.out.println(model + subModel + ", " + year + " год выпуска, " + country + ", " + color + " цвет кузова. Объем двигателя "
                 + engineVol + " литра(-ов). " + transmissionType + " трансмиссия, " + bodyType + ". Номерной знак: "
-        + numberPlate + ". " + numberOfSeats + " сидения. Шины зимние? " + winterTires);
+                + numberPlate + ". " + numberOfSeats + " сидения. Шины зимние? " + winterTires);
     }
 
 
     static void changeTires(int currentMonth, Car car) {       //Метод для смены шин в зависимости от месяца
 
-         if ((currentMonth >= 11 && currentMonth <= 12) || (currentMonth >= 1 && currentMonth <= 3)){
+        if ((currentMonth >= 11 && currentMonth <= 12) || (currentMonth >= 1 && currentMonth <= 3)){
 
-             car.setWinterTires(true);
+            car.setWinterTires(true);
 
-         } else if(currentMonth > 12 || currentMonth <= 0) {
+        } else if(currentMonth > 12 || currentMonth <= 0) {
 
-             System.out.println("Месяц введён ошибочно. Не понятно, менять шины или нет.");
+            System.out.println("Месяц введён ошибочно. Не понятно, менять шины или нет.");
 
         } else {
 
-             car.setWinterTires(false);
+            car.setWinterTires(false);
 
-         }
+        }
 
     }
 
@@ -261,11 +261,11 @@ public class Car {
 
 
         Car car;
-        final int expiryDay;
-        final int expiryMonth;
-        final int expiryYear;
-        final int insuranceCost;
-        final int insuranceNumber;
+        private final int expiryDay;
+        private final int expiryMonth;
+        private final int expiryYear;
+        private final int insuranceCost;
+        private final int insuranceNumber;
 
 
         //Геттеры для даты истечения страховки ->
@@ -303,23 +303,23 @@ public class Car {
             if(expiryMonth > 12 || expiryMonth < 0){
                 this.expiryMonth = 1;
             } else {
-            this.expiryMonth = expiryMonth;}
+                this.expiryMonth = expiryMonth;}
 
             if(expiryYear < 0){
 
                 this.expiryYear = 1980;
             } else {
-            this.expiryYear = expiryYear;}
+                this.expiryYear = expiryYear;}
 
             if(insuranceCost < 0){
                 this.insuranceCost = Math.abs(insuranceCost);
             } else {
-            this.insuranceCost = insuranceCost;}
+                this.insuranceCost = insuranceCost;}
 
             if(insuranceNumber < 0){
                 this.insuranceNumber = Math.abs(insuranceNumber);
             } else {
-            this.insuranceNumber = insuranceNumber;}
+                this.insuranceNumber = insuranceNumber;}
         }
 
         public void checkInsuranceExpired(Insurance insurance) {     //Метод для проверки действительности страховки по дате
