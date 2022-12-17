@@ -75,6 +75,8 @@ public class Main {
 
     //Номер страховки верен. Можно ехать! :)
 
+        Car.Key keyCar2 = car2.new Key(true, true);
+
     //Проверка страховки на автомобиле 5 и её номера.
 
         insuranceCar5.checkInsuranceExpired(insuranceCar5);

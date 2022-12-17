@@ -261,11 +261,11 @@ public class Car {
 
 
         Car car;
-        final int expiryDay;
-        final int expiryMonth;
-        final int expiryYear;
-        final int insuranceCost;
-        final int insuranceNumber;
+        private final int expiryDay;
+        private final int expiryMonth;
+        private final int expiryYear;
+        private final int insuranceCost;
+        private final int insuranceNumber;
 
 
         //Геттеры для даты истечения страховки ->
