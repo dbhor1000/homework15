@@ -231,9 +231,13 @@ public class Car {
 
     class Key {      //Внутренний класс "Ключ"
 
-        boolean remoteEngineLaunch = false;
-        boolean noKeyAccess = false;
+        private boolean remoteEngineLaunch = false;
+        private boolean noKeyAccess = false;
 
+        public Key(boolean remoteEngineLaunch, boolean noKeyAccess) {
+            this.remoteEngineLaunch = remoteEngineLaunch;
+            this.noKeyAccess = noKeyAccess;
+        }
     }
 
     public void checkNumberPlate(Car car){      //Метод для проверки номерного знака
